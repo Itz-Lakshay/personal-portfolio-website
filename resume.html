@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resume - Lakshay Arora</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #000;
+            color: #fff;
+        }
+
+        header {
+            background: #000;
+            padding: 20px 0;
+            border-bottom: 1px solid #222;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            transition: .3s;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: #f7b731;
+        }
+
+        .resume {
+            padding: 100px 0;
+        }
+
+        .resume h1 {
+            font-size: 55px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .resume p.title {
+            text-align: center;
+            color: #888;
+            margin-bottom: 60px;
+        }
+
+        .resume-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 35px;
+        }
+
+        .card {
+            background: #111;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #222;
+            transition: .3s;
+        }
+
+        .card:hover {
+            border-color: #f7b731;
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            color: #f7b731;
+            margin-bottom: 25px;
+            font-size: 28px;
+        }
+
+        .item {
+            margin-bottom: 25px;
+        }
+
+        .item h3 {
+            font-size: 22px;
+            margin-bottom: 8px;
+        }
+
+        .item span {
+            display: inline-block;
+            color: #f7b731;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        .item p {
+            color: #bbb;
+            line-height: 1.8;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 12px;
+            color: #ddd;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 35px;
+            background: #f7b731;
+            color: #000;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: .3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+        }
+
+        @media(max-width:900px) {
+
+            .resume-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .resume h1 {
+                font-size: 40px;
+            }
+
+            nav ul {
+                display: none;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container">
+
+            <nav>
+
+                <div class="logo">
+                    LAKSHAY
+                </div>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="resume.html" class="active">Resume</a></li>
+
+                    <li><a href="services.html">Services</a></li>
+
+                    <li><a href="skills.html">Skills</a></li>
+
+                    <li><a href="projects.html">Projects</a></li>
+
+                    <li><a href="blog.html">My Blog</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <section class="resume">
+
+        <div class="container">
+
+            <h1>My Resume</h1>
+
+            <p class="title">
+                My education, experience, technical skills and career objective.
+            </p>
+
+            <div class="resume-grid">
+
+                <div class="card">
+
+                    <h2>Education</h2>
+
+                    <div class="item">
+
+                        <h3>Bachelor of Computer Applications (BCA)</h3>
+
+                        <span>2024 - Present</span>
+
+                        <p>
+                            Currently pursuing a Bachelor of Computer Applications with a focus on software development,
+                            programming, databases, and web technologies.
+                        </p>
+
+                    </div>
+
+                    <div class="item">
+
+                        <h3>Senior Secondary (Class XII)</h3>
+
+                        <span>Completed 2024</span>
+
+                        <p>
+                            Completed higher secondary education with Computer Science and Mathematics.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="card">
+
+                    <h2>Experience</h2>
+
+                    <div class="item">
+
+                        <h3>Frontend Development</h3>
+
+                        <span>Personal Projects</span>
+
+                        <p>
+                            Designed responsive websites using HTML, CSS and JavaScript while learning modern UI
+                            development.
+                        </p>
+
+                    </div>
+
+                    <div class="item">
+
+                        <h3>Programming Practice</h3>
+
+                        <span>Ongoing</span>
+
+                        <p>
+                            Regularly solving coding problems and improving knowledge in Java, Python and Data
+                            Structures.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="card">
+
+                    <h2>Technical Skills</h2>
+
+                    <ul>
+
+                        <li>HTML5</li>
+
+                        <li>CSS3</li>
+
+                        <li>JavaScript</li>
+
+                        <li>Java</li>
+
+                        <li>Python</li>
+
+                        <li>C Programming</li>
+
+                        <li>SQL</li>
+
+                        <li>Git & GitHub</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="card">
+
+                    <h2>Career Objective</h2>
+
+                    <p>
+                        To secure a challenging position as a Software Developer where I can apply my technical
+                        knowledge, improve my programming skills, and contribute to innovative projects while
+                        continuously learning new technologies.
+                    </p>
+
+                    <br>
+
+                    <a href="#" class="btn">
+                        Download CV
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>

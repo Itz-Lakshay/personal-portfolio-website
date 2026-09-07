@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About - Shehan</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #000;
+            color: #fff;
+        }
+
+        header {
+            background: #000;
+            padding: 20px 0;
+            border-bottom: 1px solid #222;
+            position: sticky;
+            top: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            transition: .3s;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: #f7b731;
+        }
+
+        .about {
+            padding: 100px 0;
+        }
+
+        .about-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 80px;
+        }
+
+        .about-image img {
+            width: 420px;
+        }
+
+        .about-content h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            color: #999;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        .info {
+            margin-bottom: 30px;
+        }
+
+        .info p {
+            margin: 12px 0;
+            color: #ddd;
+        }
+
+        .info strong {
+            display: inline-block;
+            width: 160px;
+            color: #fff;
+        }
+
+        .projects {
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        .projects span {
+            color: #f7b731;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 35px;
+            background: #f7b731;
+            color: #000;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: .3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+        }
+
+        @media(max-width:900px) {
+
+            .about-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about-image img {
+                width: 280px;
+            }
+
+            .info strong {
+                display: block;
+                width: auto;
+                margin-bottom: 5px;
+            }
+
+            nav ul {
+                display: none;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container">
+
+            <nav>
+
+                <div class="logo">
+                    SHEHAN
+                </div>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="about.html" class="active">About</a></li>
+
+                    <li><a href="resume.html">Resume</a></li>
+
+                    <li><a href="services.html">Services</a></li>
+
+                    <li><a href="skills.html">Skills</a></li>
+
+                    <li><a href="projects.html">Projects</a></li>
+
+                    <li><a href="blog.html">My Blog</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <section class="about">
+
+        <div class="container">
+
+            <div class="about-container">
+
+                <div class="about-image">
+
+                    <img src="images/about.png" alt="About">
+
+                </div>
+
+                <div class="about-content">
+
+                    <h1>About Me</h1>
+
+                    <p>
+                        A passionate Full Stack Web Developer with experience in building responsive,
+                        modern, and user-friendly web applications. I enjoy solving problems and
+                        creating beautiful digital experiences.
+                    </p>
+
+                    <div class="info">
+
+                        <p><strong>Name:</strong> Shasika Shehan</p>
+
+                        <p><strong>Date of Birth:</strong> January 01, 1987</p>
+
+                        <p><strong>Address:</strong> San Francisco, California, USA</p>
+
+                        <p><strong>Email:</strong> darkthom@gmail.com</p>
+
+                        <p><strong>Phone:</strong> +1 234 567 890</p>
+
+                        <p><strong>Experience:</strong> 5+ Years</p>
+
+                    </div>
+
+                    <div class="projects">
+
+                        <span>73</span> Projects Completed
+
+                    </div>
+
+                    <a href="#" class="btn">
+
+                        Download CV
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

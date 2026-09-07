@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact - Lakshay Arora</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #000;
+            color: #fff;
+        }
+
+        header {
+            background: #000;
+            padding: 20px 0;
+            border-bottom: 1px solid #222;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            transition: .3s;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: #f7b731;
+        }
+
+        /* ================= CONTACT ================= */
+
+        .contact {
+            padding: 100px 0;
+        }
+
+        .contact h1 {
+            font-size: 55px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .contact p.subtitle {
+            text-align: center;
+            color: #888;
+            margin-bottom: 60px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        /* FORM */
+
+        .contact-form {
+            background: #111;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #222;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px 15px;
+            margin-bottom: 15px;
+            background: #000;
+            border: 1px solid #333;
+            color: #fff;
+            border-radius: 8px;
+            outline: none;
+        }
+
+        .contact-form textarea {
+            resize: none;
+            height: 150px;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 14px;
+            background: #f7b731;
+            border: none;
+            color: #000;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        .contact-form button:hover {
+            transform: translateY(-3px);
+        }
+
+        /* INFO BOX */
+
+        .contact-info {
+            background: #111;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #222;
+        }
+
+        .info-box {
+            margin-bottom: 25px;
+        }
+
+        .info-box h3 {
+            color: #f7b731;
+            margin-bottom: 10px;
+        }
+
+        .info-box p {
+            color: #bbb;
+            line-height: 1.6;
+        }
+
+        /* SOCIAL */
+
+        .social {
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .social a {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #000;
+            border: 1px solid #333;
+            border-radius: 8px;
+            color: #fff;
+            text-decoration: none;
+            transition: .3s;
+        }
+
+        .social a:hover {
+            border-color: #f7b731;
+            color: #f7b731;
+        }
+
+        /* RESPONSIVE */
+
+        @media(max-width:900px) {
+
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            nav ul {
+                display: none;
+            }
+
+            .contact h1 {
+                font-size: 40px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container">
+
+            <nav>
+
+                <div class="logo">
+                    LAKSHAY
+                </div>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="resume.html">Resume</a></li>
+
+                    <li><a href="services.html">Services</a></li>
+
+                    <li><a href="skills.html">Skills</a></li>
+
+                    <li><a href="projects.html">Projects</a></li>
+
+                    <li><a href="blog.html">My Blog</a></li>
+
+                    <li><a href="contact.html" class="active">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <section class="contact">
+
+        <div class="container">
+
+            <h1>Contact Me</h1>
+
+            <p class="subtitle">
+                Feel free to reach out for collaborations, projects, or any queries.
+            </p>
+
+            <div class="contact-wrapper">
+
+                <!-- FORM -->
+
+                <div class="contact-form">
+
+                    <form>
+
+                        <input type="text" placeholder="Your Name" required>
+
+                        <input type="email" placeholder="Your Email" required>
+
+                        <input type="text" placeholder="Subject">
+
+                        <textarea placeholder="Your Message"></textarea>
+
+                        <button type="submit">Send Message</button>
+
+                    </form>
+
+                </div>
+
+                <!-- INFO -->
+
+                <div class="contact-info">
+
+                    <div class="info-box">
+
+                        <h3>Address</h3>
+
+                        <p>Karnal, Haryana, India</p>
+
+                    </div>
+
+                    <div class="info-box">
+
+                        <h3>Email</h3>
+
+                        <p>lakshay.0032.official@gmail.com</p>
+
+                    </div>
+
+                    <div class="info-box">
+
+                        <h3>Phone</h3>
+
+                        <p>+91 8278452749</p>
+
+                    </div>
+
+                    <div class="info-box">
+
+                        <h3>Follow Me</h3>
+
+                        <div class="social">
+
+                            <a href="#">GitHub</a>
+
+                            <a href="#">LinkedIn</a>
+
+                            <a href="#">Instagram</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>

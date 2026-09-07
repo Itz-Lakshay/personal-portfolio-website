@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Services - Lakshay Arora</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #000;
+            color: #fff;
+        }
+
+        header {
+            background: #000;
+            padding: 20px 0;
+            border-bottom: 1px solid #222;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            transition: .3s;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: #f7b731;
+        }
+
+        .services {
+            padding: 100px 0;
+        }
+
+        .services h1 {
+            font-size: 55px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .services p.title {
+            text-align: center;
+            color: #888;
+            margin-bottom: 60px;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .card {
+            background: #111;
+            padding: 35px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #222;
+            transition: .3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #f7b731;
+        }
+
+        .icon {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .card h2 {
+            color: #f7b731;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .card p {
+            color: #bbb;
+            line-height: 1.8;
+        }
+
+        @media(max-width:992px) {
+
+            .service-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            nav ul {
+                display: none;
+            }
+
+        }
+
+        @media(max-width:700px) {
+
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .services h1 {
+                font-size: 40px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container">
+
+            <nav>
+
+                <div class="logo">
+                    LAKSHAY
+                </div>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="resume.html">Resume</a></li>
+
+                    <li><a href="services.html" class="active">Services</a></li>
+
+                    <li><a href="skills.html">Skills</a></li>
+
+                    <li><a href="projects.html">Projects</a></li>
+
+                    <li><a href="blog.html">My Blog</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <section class="services">
+
+        <div class="container">
+
+            <h1>My Services</h1>
+
+            <p class="title">
+                I offer modern web development and software solutions with a focus on clean design and performance.
+            </p>
+
+            <div class="service-grid">
+
+                <div class="card">
+
+                    <div class="icon">💻</div>
+
+                    <h2>Web Development</h2>
+
+                    <p>
+                        Build responsive, fast, and modern websites using HTML, CSS, JavaScript, and current web
+                        technologies.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <div class="icon">🎨</div>
+
+                    <h2>UI / UX Design</h2>
+
+                    <p>
+                        Design attractive, user-friendly interfaces with a focus on accessibility and great user
+                        experience.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <div class="icon">⚙️</div>
+
+                    <h2>Backend Development</h2>
+
+                    <p>
+                        Develop secure backend systems using Java, Python, SQL, and database-driven applications.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <div class="icon">📱</div>
+
+                    <h2>Responsive Design</h2>
+
+                    <p>
+                        Create websites that work seamlessly across desktops, tablets, and mobile devices.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <div class="icon">🛠️</div>
+
+                    <h2>Problem Solving</h2>
+
+                    <p>
+                        Solve programming challenges and optimize applications using efficient algorithms and clean
+                        code.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <div class="icon">🚀</div>
+
+                    <h2>Portfolio Websites</h2>
+
+                    <p>
+                        Design professional portfolio websites for students, developers, freelancers, and businesses.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
