@@ -20,22 +20,24 @@ menuBtn.addEventListener("click", () => {
 const heroTitle = document.querySelector(".hero h1");
 
 if (heroTitle) {
-    const text = heroTitle.innerHTML;
+    const finalHTML = heroTitle.innerHTML;       // save the real markup: "I'm <span>Lakshay</span><br><span>Arora</span>"
+    const plainText = heroTitle.textContent;      // save just the visible text: "I'm LakshayArora"
     heroTitle.innerHTML = "";
 
     let i = 0;
 
     function type() {
-        if (i < text.length) {
-            heroTitle.innerHTML += text.charAt(i);
+        if (i < plainText.length) {
+            heroTitle.textContent += plainText.charAt(i);  // textContent = safe, never parses tags
             i++;
             setTimeout(type, 40);
+        } else {
+            heroTitle.innerHTML = finalHTML;  // once typing is done, swap in the real styled version
         }
     }
 
     type();
 }
-
 
 // ================= SCROLL REVEAL =================
 
